@@ -1,0 +1,63 @@
+.admin-product-listing {
+    h3 {
+        font-size: 20px;
+    }
+    .heading-row {
+        font-weight: 800;
+    }
+    .add-product-row {
+        margin-bottom: 5px;
+    }
+    .product-row, .heading-row {
+        div {
+            border: 1px solid $black;
+        }
+    }
+    .heading-row {
+        .col {
+            text-align: center;
+            padding: 10px;
+            background-color: $blue;
+            text-transform: uppercase;
+        }
+    }
+    .product-row {
+        &:nth-child(odd) {
+            background-color: $gray;
+        }
+        .col {
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
+
+#modal {
+    .create-product-overlay-container {
+            width: 100%;
+            background: $black;
+            position: fixed;
+            display: block;
+            top: 0;
+            height: 100vh;
+        .create-product-overlay {
+            position: relative;
+            top: 50%;
+            .create-product-form {
+                background-color: $blue;
+                width: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                padding: 20px;
+                transform: translate(-50%, -50%);
+                .close-modal-icon {
+                    cursor: pointer;
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                }
+            }
+        }  
+    } 
+}
